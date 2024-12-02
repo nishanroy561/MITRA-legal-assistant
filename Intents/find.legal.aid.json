@@ -1,0 +1,70 @@
+{
+  "id": "4f977748-1059-4b78-a492-6e6f1faf14f5",
+  "name": "find.legal.aid",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Find Legal Aid",
+                  "type": "info",
+                  "subtitle": "Access information about legal aid services provided by the DOJ."
+                },
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Legal Aid Services",
+                      "link": "https://doj.gov.in/national-legal-services-authority/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need legal aid",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3a9e807a-9e2b-42be-9796-7937237bd145",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

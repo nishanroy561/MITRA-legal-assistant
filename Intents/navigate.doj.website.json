@@ -1,0 +1,130 @@
+{
+  "id": "532af9eb-9a11-44da-8785-19bf9c3f4e35",
+  "name": "navigate.doj.website",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Department of Justice - Homepage",
+                  "subtitle": "Let me know what you’re looking for, and I can guide you to the right section.",
+                  "type": "info"
+                },
+                {
+                  "options": [
+                    {
+                      "text": "File a Complaint",
+                      "link": "https://doj.gov.in/contact-us/"
+                    },
+                    {
+                      "link": "https://ecourts.gov.in/ecourts_home/",
+                      "text": "Check Case Status"
+                    },
+                    {
+                      "text": "Download Legal Forms",
+                      "link": "https://doj.gov.in/forms/"
+                    },
+                    {
+                      "link": "https://doj.gov.in/national-legal-services-authority/",
+                      "text": "Find Legal Aid"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Navigate me",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5a9cf625-6a99-4eee-ab2e-59f454a98472",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need assistance with this website",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4e6d47e6-69a3-475d-869d-84cbc1849508",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Navigate me through DOJ",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "171cc429-4ade-4332-91de-e7e2e862d28b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need assistance with the DOJ website.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "439571c0-c298-4098-9bdd-c78096bfacfc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Help me find my way around the DOJ site.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e863351c-8009-470c-a82a-01f8abef3593",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

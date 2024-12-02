@@ -1,0 +1,53 @@
+{
+  "id": "0609c3af-7d55-47db-9272-2370e386b008",
+  "name": "bot.identity",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "I am MITRA, your virtual assistant for the Department of Justice. I'm here to help you navigate the DOJ website, answer your questions, and guide you to the right resources. Let me know what you need assistance with"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Who are you ?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2df32f34-1833-4cad-a85e-1e03d957a84e",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

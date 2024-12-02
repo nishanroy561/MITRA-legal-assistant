@@ -1,0 +1,118 @@
+{
+  "id": "e933dec4-6cc1-4dff-acd4-2ea4cde6a7b2",
+  "name": "learn.about.doj.services",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "subtitle": "Explore programs, services, and support offered by the Department of Justice.",
+                  "type": "info",
+                  "title": "DOJ Services Overview"
+                },
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "link": "https://doj.gov.in/services/",
+                      "text": "View DOJ Services"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Learn about DOJ facilities",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "50e69eea-ec55-4606-acfb-784aac574303",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "List services provided by DOJ",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "eb77b27b-7b65-4af1-bf4c-ac0587e0d767",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What can I access through DOJ?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cc9931cb-74c7-4a00-a372-602ffd806e13",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me about DOJ programs",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3796c8d2-e85b-4afd-982e-1ff74d2c7c73",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What services does the DOJ offer?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2de98c16-847e-4d61-83bc-1659aab81723",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

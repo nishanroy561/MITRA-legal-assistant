@@ -1,0 +1,95 @@
+{
+  "id": "009ca97b-b255-45c4-a9f8-6384946e7e49",
+  "name": "check.case.status",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "info",
+                  "link": "https://ecourts.gov.in/ecourts_home/",
+                  "title": "Check Case Status",
+                  "subtitle": "You can check the status of your case through the eCourts portal."
+                },
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Go to eCourts Portal",
+                      "link": "https://ecourts.gov.in/ecourts_home/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is there a way to track my case progress?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f4e10cd3-022b-4c01-9d2f-98d6deef5082",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Check the status of my case",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "54b30b46-71d4-4dac-a5e0-dd4893c9f240",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How do I check my case status?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "18dffd76-5adf-4623-b89f-ddf3e7b2bfa7",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

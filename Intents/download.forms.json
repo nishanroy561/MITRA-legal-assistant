@@ -1,0 +1,118 @@
+{
+  "id": "68f9eda8-d306-4d6e-8124-3192fdb81f15",
+  "name": "download.forms",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "subtitle": "Find downloadable legal forms for various services.",
+                  "title": "Download Legal Forms",
+                  "type": "info"
+                },
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Download Forms",
+                      "link": "https://doj.gov.in/forms/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Access DOJ legal forms",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "77ed91e9-ee47-4902-aec8-3907fde5da41",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Download forms for legal procedures",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d3e0d72b-b24c-483a-a9e1-78f2c6f94347",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need legal forms for DOJ services",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "512a6be4-a592-485c-8458-3f8acd300af9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me the DOJ forms section",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2b6394ac-224c-4e6c-b6e2-90281aad95a3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Where can I download DOJ forms?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fd6a604f-4a5d-4d2a-b10d-8bac48855808",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,119 @@
+{
+  "id": "82c0f3d1-490f-43dd-b610-2f9045ed65ae",
+  "name": "navigate.ecourt.services",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "e-Committee Services",
+                  "type": "info",
+                  "subtitle": "Access the e-Committee portal for digital court services in India. This includes case status, judgments, orders, and more.",
+                  "link": "https://ecommitteesci.gov.in/"
+                },
+                {
+                  "options": [
+                    {
+                      "link": "https://ecommitteesci.gov.in/",
+                      "text": "Visit e-Committee"
+                    },
+                    {
+                      "link": "https://ecourts.gov.in/ecourts_home/",
+                      "text": "Case Status"
+                    },
+                    {
+                      "text": "Judgments and Orders",
+                      "link": "https://judgments.ecourts.gov.in/pdfsearch/index.php"
+                    },
+                    {
+                      "text": "Court Fees Information",
+                      "link": "https://ecommitteesci.gov.in/project/online-e-court-fees/#:~:text=Total%20Court%20fees%20deposited%20using%20Online%20Payment%20at,is%20Rs.%204%2C33%2C04%2C89%2C285%2F-%20till%2030%20th%20April%2C%202024."
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Where can I find online court services?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "63b1e942-e7dc-4ad2-96a9-17de5bdb377a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How do I use online court services?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "163b1f5a-79b6-4514-a498-522adcea2265",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Guide me to digital court services",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f2126bb6-cd31-441d-b64f-940b89dea90c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me the e-Committee portal",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6f984f2f-5621-4c9c-b035-b078880fd7fb",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

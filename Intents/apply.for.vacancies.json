@@ -1,0 +1,127 @@
+{
+  "id": "17e4089d-121f-4914-a76c-182f329a0678",
+  "name": "apply.for.vacancies",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "job-careers-followup",
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "DOJ Careers",
+                  "subtitle": "Let me know where you're looking for a vacancy position. Select one of the options below to explore current openings.",
+                  "type": "info"
+                },
+                {
+                  "options": [
+                    {
+                      "text": "Supreme Court",
+                      "link": "https://doj.gov.in/supreme-court-3/"
+                    },
+                    {
+                      "text": "High Court",
+                      "link": "https://dashboard.doj.gov.in/vacancy-position/"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Apply for a DOJ position.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9bb304fb-d729-4ae9-a364-eea29e20af36",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are there any job openings at DOJ?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "91c6d4f4-9c5f-4d81-bf07-7eab54050f59",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me DOJ career opportunities.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e190102e-685b-4ca2-a57d-650196aec4e2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the current vacancies at DOJ?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8137c1b1-03e7-4269-b805-c2df4c794a61",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How can I apply for DOJ jobs?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bd3b7751-0a3c-4030-a6af-aa16f350625d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
