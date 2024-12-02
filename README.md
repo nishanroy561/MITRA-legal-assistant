@@ -85,19 +85,45 @@ GROQ_API_KEY="your_groq_api_key_here"
 
 ## Running the Project
 
-1. Start the FastAPI backend:
+1. Start the FastAPI backend server:
+
+Development mode:
 ```bash
 uvicorn server:app --reload --port 8000
 ```
 
-2. (Optional) Set up HTTPS with ngrok:
+Production mode:
 ```bash
-# Start ngrok tunnel to your FastAPI server
-./ngrok http 8000
-
-# Copy the HTTPS URL provided by ngrok
-# Update your Dialogflow webhook URL with the ngrok HTTPS URL
+uvicorn server:app --host 0.0.0.0 --port 8000 --workers 4
 ```
+
+The differences:
+- `--reload`: Auto-reloads server when code changes (development only)
+- `--host 0.0.0.0`: Allows external access
+- `--workers 4`: Number of worker processes (adjust based on CPU cores)
+
+2. Set up HTTPS with ngrok:
+
+Dialogflow requires HTTPS for webhooks. Use ngrok to create a secure tunnel:
+
+```bash
+# Windows
+ngrok.exe http 8000
+
+# macOS/Linux
+./ngrok http 8000
+```
+
+You'll see output like this:
+```
+Session Status                online
+Account                       your-account
+Version                       3.4.0
+Region                       United States (us)
+Forwarding                    https://abc123.ngrok.io -> http://localhost:8000
+```
+
+The `https://abc123.ngrok.io` URL is your public HTTPS endpoint.
 
 2. Serve the frontend:
 - For development, you can use Python's built-in server:
@@ -119,7 +145,18 @@ python -m SimpleHTTPServer 8080
 1. Import Intents:
    - Navigate to your Dialogflow project
    - Go to Settings > Import/Export
-   - Import the `intents/intents.json` file
+   - Import all JSON files from the `intents/` folder:
+     - Default Fallback Intent.json
+     - Default Welcome Intent.json
+     - apply.for.vacancies.json
+     - bot.identity.json
+     - check.case.status.json
+     - download.forms.json
+     - file.complaint.json
+     - find.legal.aid.json
+     - learn.about.doj.services.json
+     - navigate.doj.website.json
+     - navigate.ecourt.services.json
    - This will set up pre-configured intents for:
      - DOJ navigation queries
      - Legal document searches
@@ -129,9 +166,17 @@ python -m SimpleHTTPServer 8080
 2. Configure Webhook:
    - In Dialogflow, go to Fulfillment
    - Enable webhook
-   - Set the URL to your FastAPI endpoint:
-     - Local: `https://<ngrok-url>/dialogflow-webhook`
-     - Production: `https://your-domain.com/dialogflow-webhook`
+   - Set the webhook URL:
+     - During development: Use your ngrok HTTPS URL
+       ```
+       https://abc123.ngrok.io/dialogflow-webhook
+       ```
+   - Headers: No additional headers required
+   - Click "Save"
+
+Note: You'll need to update the webhook URL whenever:
+- You restart ngrok (development)
+- Your domain/SSL certificate changes (production)
 
 ## Usage Tips
 
