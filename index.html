@@ -633,7 +633,7 @@
         <script src="https://doj.gov.in/wp-content/themes/sdo-theme/js/html5shiv.min.js"></script>
     <![endif]-->
     <script>
-        let ajaxurl = ajax_url = ajaxUrl = AJAX_URL = AJAXURL = "https://doj.gov.in/wp-admin/admin-ajax.php";
+        let ajaxurl = ajax_url = ajaxUrl = AJAX_URL = AJAXURL = "YOUR_AJAX_URL";
     </script>
     <style type="text/css">
         .fancybox-margin {
@@ -651,10 +651,10 @@
       
       .mic-button {
         position: fixed;
-        bottom: 16px; /* Align with Dialogflow button */
-        right: 90px; /* Position to the left of Dialogflow button */
+        bottom: 106px;
+        right: 30px;
         z-index: 1000;
-        background: #1a73e8;
+        background: transparent;
         border: none;
         border-radius: 50%;
         width: 48px;
@@ -663,24 +663,38 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         transition: all 0.3s ease;
-      }
-
-      .mic-button:hover {
-        background: #1557b0;
-        transform: scale(1.05);
+        opacity: 0;
       }
 
       .mic-button svg {
         width: 24px;
         height: 24px;
-        fill: white;
+        fill: transparent;
+        transition: fill 0.3s ease;
+      }
+
+      .mic-button.chatbot-open {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .mic-button.chatbot-open svg {
+        fill: #666666;
+      }
+
+      .mic-button:hover {
+        background: rgba(26, 115, 232, 0.1);
+        transform: scale(1.05);
       }
 
       .mic-button.recording {
         background: #ff4444;
         animation: pulse 1.5s infinite;
+      }
+
+      .mic-button.recording svg {
+        fill: white;
       }
 
       @keyframes pulse {
@@ -953,9 +967,8 @@
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
                         <div class="logo">
                             <a href="https://doj.gov.in/" title="Go to home" class="site_logo" rel="home">
-                                <img id="logo" class="emblem"
-                                    src="https://doj.gov.in/wp-content/themes/sdo-theme/images/emblem.svg"
-                                    alt="State Emblem of India">
+                                <!-- Remove this img tag -->
+                                <!-- <img id="logo" class="emblem" src="https://doj.gov.in/wp-content/themes/sdo-theme/images/emblem.svg" alt="State Emblem of India"> -->
 
                                 <div class="logo_text">
                                     <strong lang="hi">
@@ -3171,7 +3184,7 @@
                                                                         rel="noopener noreferrer" target="_blank">
                                                                         <img decoding="async"
                                                                             src="https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/bfi_thumb/20241101117270306-qweqd61uzy2e924ctbwovb5f34nf42gqa8oynqwvc4.jpeg"
-                                                                            alt="Special Swachhata Campaign 4.0 (2nd - 31st October 2024)"
+                                                                            alt="Special Swachhata Campaign4.0 (2nd - 31st October 2024)"
                                                                             draggable="false">
                                                                     </a>
                                                                     <div class="hide fancySocial clearfix">
@@ -3211,7 +3224,7 @@
                                                                 <div class="galleryThumb ">
                                                                     <a href="https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2024/11/202411011268038880-1024x682.jpeg"
                                                                         class="fancybox"
-                                                                        title="Special Swachhata Campaign 4.0 (2nd - 31st October 2024)"
+                                                                        title="Special Swachhata Campaign4.0 (2nd - 31st October 2024)"
                                                                         rel="noopener noreferrer" target="_blank">
                                                                         <img decoding="async"
                                                                             src="https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/bfi_thumb/202411011268038880-qweqd540t413xg5pyti2atdyhqs1wdczy41h6gy9ic.jpeg"
@@ -3633,23 +3646,8 @@
                                     onclick="return confirm('You are being redirected to an external website. Please note that Department of Justice cannot be held responsible for external websites content &amp; privacy policies.');"
                                     aria-label="https://s3waas.gov.in/ - External site that opens in a new window"
                                     title="https://s3waas.gov.in/ - External site that opens in a new window"
-                                    target="_blank" rel="noopener noreferrer"><img
-                                        src="https://doj.gov.in/wp-content/themes/sdo-theme/images/s3waas.png"
-                                        class="swaas" alt="Secure, Scalable and Sugamya Website as a Service"></a>
-                                <a href="http://www.nic.in/"
-                                    onclick="return confirm('You are being redirected to an external website. Please note that Department of Justice cannot be held responsible for external websites content &amp; privacy policies.');"
-                                    aria-label="http://www.nic.in/ - External site that opens in a new window"
-                                    title="http://www.nic.in/ - External site that opens in a new window"
-                                    target="_blank" rel="noopener noreferrer"><img
-                                        src="https://doj.gov.in/wp-content/themes/sdo-theme/images/nicLogo.png"
-                                        class="nic" alt="National Informatics Centre"></a>
-                                <a href="http://www.digitalindia.gov.in/"
-                                    onclick="return confirm('You are being redirected to an external website. Please note that Department of Justice cannot be held responsible for external websites content &amp; privacy policies.');"
-                                    aria-label="http://www.digitalindia.gov.in/ - External site that opens in a new window"
-                                    title="http://www.digitalindia.gov.in/ - External site that opens in a new window"
-                                    target="_blank" rel="noopener noreferrer"><img
-                                        src="https://doj.gov.in/wp-content/themes/sdo-theme/images/digitalIndia.png"
-                                        alt="Digital India"></a>
+                                    target="_blank" rel="noopener noreferrer">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -3768,16 +3766,17 @@
         style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"
         title="Twitter analytics iframe"></iframe>
 
-    <!-- Paste your Dialogflow Messenger script here -->
+ <!-- Paste your Dialogflow Messenger script here -->
     <!-- Example:
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
         intent="WELCOME"
         chat-title="YOUR_CHAT_TITLE"
-        agent-id="YOUR_AGENT_ID"
+        agent-id="YOUR_AGENT_ID_HERE"
         language-code="en"
     ></df-messenger>
     -->
+    
     </script>
     <!-- Voice Input Button -->
     <button class="mic-button" onclick="startSpeechRecognition()" title="Start voice input">
@@ -3834,6 +3833,175 @@
       if (event.key.toLowerCase() === 'm') {
         startSpeechRecognition();
       }
+    });
+    </script>
+    <!-- Add this code just before the closing </body> tag -->
+    <script>
+    // Function to watch for clicks on the Dialogflow messenger button
+    function watchDialogflowButton() {
+      const dfMessenger = document.querySelector('df-messenger');
+      if (!dfMessenger || !dfMessenger.shadowRoot) return;
+
+      // Find the messenger toggle button
+      const toggleButton = dfMessenger.shadowRoot.querySelector('df-messenger-toggle');
+      if (!toggleButton) return;
+
+      // Add click event listener to the toggle button
+      toggleButton.addEventListener('click', () => {
+        const micButton = document.querySelector('.mic-button');
+        if (!micButton) return;
+
+        // Toggle the chatbot-open class
+        if (toggleButton.getAttribute('opened') === '') {
+          micButton.classList.add('chatbot-open');
+        } else {
+          micButton.classList.remove('chatbot-open');
+        }
+      });
+    }
+
+    // Initialize when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      // Wait for Dialogflow messenger to be fully loaded
+      setTimeout(() => {
+        watchDialogflowButton();
+      }, 2000);
+    });
+
+    // Watch for the Dialogflow messenger being added to the page
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.addedNodes) {
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeName === 'DF-MESSENGER') {
+              setTimeout(() => {
+                watchDialogflowButton();
+              }, 1000);
+            }
+          });
+        }
+      });
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+    </script>
+    <script>
+    // Function to watch for Dialogflow messenger chat window
+    function watchDialogflowChat() {
+      const dfMessenger = document.querySelector('df-messenger');
+      if (!dfMessenger || !dfMessenger.shadowRoot) return;
+
+      // Create observer for the chat window
+      const observer = new MutationObserver((mutations) => {
+        const chat = dfMessenger.shadowRoot.querySelector('df-messenger-chat');
+        const micButton = document.querySelector('.mic-button');
+        
+        if (chat && micButton) {
+          // Check if chat is expanded
+          const isExpanded = chat.hasAttribute('expanded');
+          console.log('Chat expanded:', isExpanded); // Debug log
+          
+          if (isExpanded) {
+            micButton.classList.add('chatbot-open');
+          } else {
+            micButton.classList.remove('chatbot-open');
+          }
+        }
+      });
+
+      // Start observing the shadow root
+      observer.observe(dfMessenger.shadowRoot, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['expanded']
+      });
+    }
+
+    // Initialize when Dialogflow messenger is loaded
+    function initializeWatcher() {
+      const dfMessenger = document.querySelector('df-messenger');
+      if (dfMessenger) {
+        // Wait for shadow DOM to be created
+        if (dfMessenger.shadowRoot) {
+          watchDialogflowChat();
+        } else {
+          dfMessenger.addEventListener('df-messenger-loaded', () => {
+            watchDialogflowChat();
+          });
+        }
+      }
+    }
+
+    // Try to initialize immediately
+    initializeWatcher();
+
+    // Also watch for the df-messenger element being added
+    const bodyObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeName === 'DF-MESSENGER') {
+            initializeWatcher();
+          }
+        });
+      });
+    });
+
+    bodyObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    // Add event listener for the custom event that Dialogflow messenger fires
+    document.addEventListener('df-messenger-loaded', () => {
+      console.log('Dialogflow messenger loaded'); // Debug log
+      initializeWatcher();
+    });
+
+    // Add event listener for when the chat window opens/closes
+    document.addEventListener('df-messenger-toggle-open', (event) => {
+      console.log('Chat toggled:', event.detail); // Debug log
+      const micButton = document.querySelector('.mic-button');
+      if (micButton) {
+        if (event.detail) {
+          micButton.classList.add('chatbot-open');
+        } else {
+          micButton.classList.remove('chatbot-open');
+        }
+      }
+    });
+    </script>
+    <script>
+    // Function to handle chat window state
+    function handleChatState(isOpen) {
+      const micButton = document.querySelector('.mic-button');
+      if (micButton) {
+        if (isOpen) {
+          micButton.classList.add('chatbot-open');
+          console.log('Chat opened - mic visible');
+        } else {
+          micButton.classList.remove('chatbot-open');
+          console.log('Chat closed - mic hidden');
+        }
+      }
+    }
+
+    // Listen for Dialogflow messenger events
+    document.addEventListener('df-messenger-loaded', () => {
+      const dfMessenger = document.querySelector('df-messenger');
+      
+      // Listen for chat open event
+      dfMessenger.addEventListener('df-messenger-opened', () => {
+        handleChatState(true);
+      });
+
+      // Listen for chat close event
+      dfMessenger.addEventListener('df-messenger-closed', () => {
+        handleChatState(false);
+      });
     });
     </script>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
